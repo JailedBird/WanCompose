@@ -18,6 +18,7 @@ import net.vrallev.android.context.AppContext
 private val applicationContext = AppContext.getApplication()
 fun String?.toast() {
     val s = this
+    s.log()
     if (!s.isNullOrEmpty()) {
         if (Looper.myLooper() != Looper.getMainLooper()) {
             Handler(Looper.getMainLooper()).post {

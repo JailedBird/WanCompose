@@ -1,5 +1,11 @@
 @file:Suppress("UnstableApiUsage")
 
+include(":feature:login")
+
+
+include(":core:http")
+
+
 pluginManagement {
     includeBuild("build-logic")
     repositories {
@@ -30,7 +36,7 @@ apply(from = "$rootDir/gradle/expose/expose.gradle.kts")
 val includeWithExpose: (projectPaths: String) -> Unit by extra
 val includeWithJavaExpose: (projectPaths: String) -> Unit by extra
 
-rootProject.name = "ModuleExpose"
+rootProject.name = "WanCompose"
 include(":app")
 include(":core:settings")
 include(":core:resource")
