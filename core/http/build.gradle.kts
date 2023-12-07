@@ -16,6 +16,7 @@ dependencies {
     // PersistentCookieJar for OkHttp 3 https://github.com/franmontiel/PersistentCookieJar
     implementation("com.github.franmontiel:PersistentCookieJar:v1.0.1")
 
+
     implementation(projects.core.resource)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.nowinandroid.android.application)
+    alias(libs.plugins.nowinandroid.android.application.compose)
     alias(libs.plugins.nowinandroid.android.application.flavors)
     alias(libs.plugins.nowinandroid.android.hilt)
     alias(libs.plugins.nowinandroid.android.room)
@@ -26,6 +27,8 @@ dependencies {
 
     // // https://square.github.io/leakcanary/getting_started/
     debugImplementation(libs.leakcanary)
+    debugImplementation(libs.androidx.compose.ui.tooling)
+    implementation(libs.androidx.compose.ui.tooling.preview)
 
     testImplementation(libs.junit4)
     androidTestImplementation(libs.junit)

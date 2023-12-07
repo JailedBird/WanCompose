@@ -20,6 +20,7 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.core.splashscreen)
     implementation(libs.androidx.compose.runtime)
+    implementation(libs.androidx.compose.material3)
     implementation(libs.androidx.lifecycle.runtimeCompose)
     implementation(libs.androidx.compose.runtime.tracing)
     implementation(libs.androidx.compose.material3.windowSizeClass)
@@ -39,6 +40,10 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
+
+
+    // debugImplementation(libs.androidx.compose.ui.tooling)
+    // implementation(libs.androidx.compose.ui.tooling.preview)
 
 
     implementation(projects.core.common)
